@@ -7,5 +7,4 @@ feature 'Enter names' do
     click_button 'Submit'
     expect(page).to have_content 'Will vs. Anastasiia'
   end
-
 end
