@@ -5,6 +5,6 @@
 feature 'Hit points' do
    scenario 'Player can see opponents hit points' do
      sign_in_and_play
-     expect(page).to have_content "Anastasiia: 60HP"
+     expect(page).to have_content "Kay: 60HP"
    end
  end
