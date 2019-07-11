@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/player.rb'
+require './lib/game.rb'
 
 class Battle < Sinatra::Base
 
@@ -22,8 +23,9 @@ enable :sessions
   end
 
   get '/attack' do
+    @game = Game.new
     @player_2 = $player_2
-    @player_2.receive_damage
+    @game.attack(@player_2)
     @player_1_name = $player_1.name
     @player_2_name = $player_2.name
     @player_2_hp = $player_2.hp
