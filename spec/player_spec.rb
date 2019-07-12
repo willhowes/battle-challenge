@@ -12,4 +12,11 @@ describe Player do
       expect(player.hp).to eq 60
     end
   end
+  # describe "#receive_damage" do
+  #   it "a player should receive damage when attacked" do
+  #     allow(player_2).to receive(:hp) { 60 }
+  #     player_test = player_2.hp - 10
+  #     expect(player_test).to eq 50
+  #   end
+  # end
 end
